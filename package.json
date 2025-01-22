@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile-sass": "sass ./src/css/index.scss ./src/css/index.css",
-    "watch-sass": "sass /src/css/index.scss /src/css/index.css -w"
+    "watch-sass": "sass ./src/css/index.scss ./src/css/index.css -w"
   },
   "author": "vitor gabriel bastos lopes",
   "license": "ISC"

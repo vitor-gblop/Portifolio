@@ -1,3 +1,122 @@
+* {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
 
+header {
+  margin: 1rem 0 1rem 0;
+}
+
+section {
+  margin: 0 0 0 0;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header nav {
+  display: flex;
+  justify-content: end;
+}
+header nav a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+header nav a:hover {
+  background-color: #f0f0f0;
+}
+
+#welcome_section {
+  background-color: aqua;
+}
+#welcome_section h1 {
+  font-size: 3rem;
+  color: black;
+}
+#welcome_section p {
+  width: 50%;
+  font-size: 1rem;
+  color: black;
+}
+
+#about_section {
+  background-color: aquamarine;
+}
+#about_section h2 {
+  font-size: 2rem;
+  color: black;
+}
+#about_section p {
+  width: 80%;
+  font-size: 1.2rem;
+  color: black;
+}
+
+#projects_section {
+  background-color: beige;
+}
+#projects_section #pj_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+#projects_section #pj_container article {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 300px;
+  margin: 1rem;
+}
+#projects_section #pj_container article a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#projects_section #pj_container article a .pj_img {
+  width: 80%;
+  aspect-ratio: 3/3;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+#projects_section #pj_container article .skills_conteiner {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+#projects_section #pj_container article .skills_conteiner a {
+  color: white;
+}
+#projects_section #pj_container article .skills_conteiner .skills {
+  flex-grow: 1;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #4d4d4d;
+}
+#projects_section h2 {
+  font-size: 2rem;
+  color: black;
+}
+#projects_section p {
+  width: 80%;
+  font-size: 1.2rem;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  #welcome_section h1 {
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
