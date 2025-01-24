@@ -1,19 +1,27 @@
+#projects_section #pj_container article .skills_conteiner .javascript:hover {
+  background-color: yellow;
+  color: black;
+}
+#projects_section #pj_container article .skills_conteiner .html:hover {
+  background-color: #e65100;
+  color: black;
+}
+#projects_section #pj_container article .skills_conteiner .css:hover {
+  background-color: #42a5f5;
+  color: white;
+}
+#projects_section #pj_container article .skills_conteiner .mysql:hover {
+  background-color: lightblue;
+  color: black;
+}
+
 * {
   margin: 0;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 header {
   margin: 1rem 0 1rem 0;
-}
-
-section {
-  margin: 0 0 0 0;
-  min-height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 header nav {
@@ -34,33 +42,81 @@ header nav a:hover {
 }
 
 #welcome_section {
-  background-color: aqua;
+  margin: 0 0 0 0;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1a1a1a;
 }
-#welcome_section h1 {
-  font-size: 3rem;
-  color: black;
-}
-#welcome_section p {
+#welcome_section #wc_container {
   width: 50%;
-  font-size: 1rem;
-  color: black;
+  margin: auto;
+}
+#welcome_section #wc_container h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+#welcome_section #wc_container p {
+  font-size: 1.1rem;
+  color: white;
+}
+#welcome_section #wc_container #social_media {
+  margin-top: 1rem;
+}
+#welcome_section #wc_container #social_media a {
+  text-decoration: none;
+  margin: 0.3rem;
+}
+#welcome_section #wc_container #social_media a img {
+  width: 1.7rem;
+  opacity: 0.7;
+  aspect-ratio: 3/3;
+}
+#welcome_section strong {
+  color: #ff9925;
 }
 
 #about_section {
-  background-color: aquamarine;
+  margin: 0 0 0 0;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2a2a2a;
 }
 #about_section h2 {
   font-size: 2rem;
-  color: black;
+  color: white;
 }
 #about_section p {
-  width: 80%;
+  width: 70%;
   font-size: 1.2rem;
-  color: black;
+  color: white;
+}
+#about_section strong {
+  color: #ff9925;
 }
 
 #projects_section {
-  background-color: beige;
+  margin: 0 0 0 0;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #3a3a3a;
+}
+#projects_section h3 {
+  font-size: 2rem;
+  color: white;
+}
+#projects_section p {
+  width: 80%;
+  font-size: 1.2rem;
+  color: white;
 }
 #projects_section #pj_container {
   display: flex;
@@ -71,12 +127,16 @@ header nav a:hover {
 }
 #projects_section #pj_container article {
   width: 40%;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   flex-basis: 300px;
   margin: 1rem;
+  padding: 0.8rem;
+  border-radius: 12px;
+  background-color: #2c2c2c;
 }
 #projects_section #pj_container article a {
   display: flex;
@@ -94,28 +154,36 @@ header nav a:hover {
   flex-wrap: wrap;
 }
 #projects_section #pj_container article .skills_conteiner a {
-  color: white;
-}
-#projects_section #pj_container article .skills_conteiner .skills {
   flex-grow: 1;
   padding: 0.5rem;
   margin: 0.5rem;
   border-radius: 0.5rem;
-  background-color: #4d4d4d;
+  color: white;
+  background-color: #222222;
 }
 #projects_section h2 {
   font-size: 2rem;
-  color: black;
+  color: white;
 }
 #projects_section p {
   width: 80%;
   font-size: 1.2rem;
-  color: black;
+  color: white;
+}
+#projects_section strong {
+  color: #ff9925;
 }
 
 @media screen and (max-width: 768px) {
-  #welcome_section h1 {
+  #welcome_section div h1 {
     text-align: center;
+  }
+  #welcome_section div p {
+    text-align: center;
+  }
+  #welcome_section div #social_media {
+    display: flex;
+    justify-content: center;
   }
 }
 
